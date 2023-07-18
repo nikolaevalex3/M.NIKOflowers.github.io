@@ -1,0 +1,387 @@
+/* @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('fonts/JetBrainsMono-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('fonts/JetBrainsMono-MediumItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('fonts/JetBrainsMono-Light.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('fonts/JetBrainsMono-LightItalic.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('fonts/JetBrainsMono-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('fonts/JetBrainsMonoNL-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: bolder;
+}  */
+
+html, body {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    max-width: 100vw;
+    background-color: rgb(174, 212, 148);
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'JetBrains Mono';
+    scroll-behavior: smooth;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+address {
+    display: inline-block;
+}
+
+header {
+    padding: 0 2rem;
+    font-weight: bold;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    border-bottom: 2px solid rgba(0,0,0,0);
+    transition: border-color 200ms linear;
+    font-weight: bolder;
+}
+
+nav ul li:hover {
+    border-color: black;
+}
+
+main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+main section {
+    padding: 1rem;
+    min-width: 0;
+    width: 100%;
+}
+
+footer {
+    padding: 1rem 2rem;
+    margin: 1rem;
+    margin-top: auto;
+    font-weight: lighter;
+    font-size: 0.8rem;
+}
+
+footer address {
+    max-width: 17.5rem;
+}
+
+button {
+    padding: 0;
+    border: 1px solid white;
+    color: inherit;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 200;
+    transition: background-color 100ms ease-in-out;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+button a {
+    display: inline-block;
+    padding: 0.5rem;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.gap-s {
+    gap: 1rem;
+}
+
+.gap-s-row{
+    row-gap: 1rem;
+}
+
+.gap-m {
+    gap: 2.3rem;
+}
+
+.gap-l-col {
+    column-gap: 3.5rem;
+}
+
+
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-even {
+    justify-content: space-evenly;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.self-start {
+    align-self: flex-start;
+}
+
+.self-end {
+    align-self: flex-end;
+}
+
+.rounded-s {
+    border-radius: 0.5rem;
+}
+
+.rounded-m {
+    border-radius: 1rem;
+}
+
+.shadow-m {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.text-black {
+    color: black;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-active {
+    color: rgb(198, 0, 46);
+}
+
+.self-bottom {
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+
+
+
+
+/*Standalone classes*/
+.logo {
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.logo > span {
+    white-space: nowrap;
+}
+
+.glass-darkest {
+    background-color: rgb(247, 158, 179);
+    backdrop-filter: blur(7px);
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+    background:
+    url(../images/1616369696_1-p-fon-s-tsvetami-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.background-color{
+    background-color: rgb(247, 158, 179);
+}
+.me-size{
+    width: 100%;
+    min-width: 40vw;
+    max-width: 50vw;
+    height:30vmax;
+    max-height: 30vmax;
+    min-height: 40vh;
+}
+.me{
+    content:'';
+    width: 100%;
+    min-width: 37vw;
+    max-width: 47vw; 
+    height: 30vmax;
+    max-height: 30vmax;
+    min-height: 30vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../images/IMG_20230614_122743.jpg'); 
+    margin-bottom: 1vmax;
+}
+
+.me a div {
+    bottom: 1rem;
+    right: 1rem;
+    padding: 1rem;
+}
+
+.banner-speech{
+    padding: 1rem;
+    content: '';
+    width: 100%;
+    height: 55vmax;
+    min-height: 30vmax;
+    background-color: rgb(247, 158, 179);
+    font-size: large;
+}
+
+.card {
+    padding: 1rem;
+    height: fit-content;
+    flex: 0.8;
+    border: 2px solid rgb(255, 255, 255);
+    color: black;
+}red
+
+.card p {
+    height: fit-content;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-thumbnail {
+    content: '';
+    width: 100%;
+    padding-top: 50%;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/image_2023-07-10_03-28-31.png');
+}
+
+.card2{
+    padding: 1rem;
+    height: fit-content;
+    flex: 0.8;
+    border: 2px solid rgb(255, 255, 255);
+    color: black;
+    max-width: 40vw; 
+    min-width: 260px;
+}
+
+.contact-links {
+    padding: 0.5rem;
+}
+
+.contact-links a {
+    padding: 5px;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid blue;
+    font-weight: bold;
+    transition: color 100ms linear;
+}
+
+.contact-links a div {
+    z-index: -1;
+    inset: 0;
+    width: 0;
+    height: 100%;
+    background-color: blue;
+    transition: width 300ms linear;
+}
+
+.contact-links a:hover div {
+    width: 100%;
+}
+
+.container {
+    padding: 1rem;
+    width: 100%;
+    height: fit-content;
+}
+
+.article-img {
+    width: 100%;
+    padding-top: 30%;
+    background-size: cover;
+    background-position: center;
+    /* background-image: url('https://www.picmaker.com/assets/images/YoutubeThumbnail/YouTube-thumbnail-maker-1.webp'); */
+}
+
+.pricing-plan span {
+    display: inline-block;
+    padding: 0.5rem 0;
+}

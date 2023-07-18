@@ -1,0 +1,50 @@
+.content1 {
+    content: '';
+    width: 100%;
+    min-width: 220px;
+    max-width: 40vw;
+    padding-top: 130%;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/certificates/photo_1_2023-07-18_04-07-27.jpg');
+}
+.content2 {
+    content: '';
+    width: 100%;
+    min-width: 220px;
+    max-width: 40vw;
+    padding-top: 130%;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/certificates/photo_2_2023-07-18_03-19-00.jpg');
+}
+.content3 {
+    content: '';
+    width: 100%;
+    min-width: 220px;
+    max-width: 40vw;
+    padding-top: 130%;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/certificates/photo_3_2023-07-18_03-19-00.jpg');
+}
+.content4 {
+    content: '';
+    width: 100%;
+    min-width: 220px;
+    max-width: 40vw;
+    padding-top: 130%;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/certificates/photo_4_2023-07-18_03-19-00.jpg');
+}
+.content5 {
+    content: '';
+    width: 100%;
+    min-width: 220px;
+    max-width: 40vw;
+    padding-top: 130%;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/certificates/photo_2_2023-07-18_04-07-27.jpg');
+}
